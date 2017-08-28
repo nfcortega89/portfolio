@@ -1,0 +1,53 @@
+.gallery {
+  min-height: 570px;
+}
+.gallery-container {
+  margin: 0 6%;
+  display: flex;
+  flex-direction: column;
+  background: #1e2227;
+}
+.head-container {
+  display: flex;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.head_tag {
+  font-size: 2.5em;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+.portfolio-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.gallery-card {
+  box-shadow: -4px -3px 12px 0px grey;
+  border-bottom-left-radius: 15px;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  padding: 1%;
+  margin: 2%;
+  border: 1px solid white;
+  min-width: 250px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.gallery-card_upper {
+  width: 100%;
+}
+.gallery-card_img {
+  width: 100%;
+  height: 160px;
+}
+.gallery-card_lower {
+  width: 100%;
+}
+.gallery-card_tag {
+  color: black;
+}
+.gallery-card_description {
+  color: black;
+}

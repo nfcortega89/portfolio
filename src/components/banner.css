@@ -1,0 +1,46 @@
+.Banner {
+  display: flex;
+  height: 100%;
+}
+.banner-container-left {
+  z-index: 5%;
+  padding-top: 75px;
+  width: 50%;
+  height: 684px;
+  background-image: linear-gradient(rgba(0, 0, 31, -0.5), rgba(0, 0, 0, -0.5)),
+    url(/static/media/bear.c15e89b0.jpg);
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-container-right {
+  z-index: -1;
+  background: #cac9c6;
+}
+.banner-text {
+  padding: 0 3%;
+  text-align: left;
+  position: relative;
+  display: flex;
+  top: 40%;
+  background: #e4e4e4;
+  min-width: 530px;
+  max-width: 530px;
+}
+.banner-head {
+  font-size: 3em;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.banner-body {
+}
+.banner__about {
+}
+.banner-btn {
+}
+.banner-container-right {
+  width: 50%;
+}

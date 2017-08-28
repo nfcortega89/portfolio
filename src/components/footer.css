@@ -1,0 +1,38 @@
+.footer {
+  height: 50px;
+  position: relative;
+  bottom: -1px;
+  width: 100%;
+  margin: 0px 0%;
+}
+.footer-container {
+  margin: 0 6%;
+  background-color: #1e2227;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.legal-container {
+  justify-content: left;
+  display: flex;
+}
+i {
+  font-family: 'FontAwesome';
+  color: whitesmoke;
+  padding: 0 19px;
+}
+i:hover {
+  color: #3cffbd;
+}
+.footer-legal {
+  font-size: 9px;
+  margin: 2em;
+  color: white;
+}
