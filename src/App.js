@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Nav from './components/nav'
 import About from './components/about'
 import Banner from './components/banner'
+import Skills from './components/skills'
 import Gallery from './components/gallery'
 import Footer from './components/footer'
 import './App.css'
@@ -14,7 +15,8 @@ class App extends Component {
         <Nav />
         <Banner />
         <About />
-        {/* <Gallery /> */}
+        <Skills />
+        <Gallery />
         <Footer />
       </div>
     )

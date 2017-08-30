@@ -8,7 +8,7 @@
   width: 50%;
   height: 684px;
   background-image: linear-gradient(rgba(0, 0, 31, -0.5), rgba(0, 0, 0, -0.5)),
-    url(/static/media/bear.c15e89b0.jpg);
+    url('../assets/bear.jpg');
   background-size: 100%;
   background-position: top center;
   background-repeat: no-repeat;
@@ -19,21 +19,39 @@
   background: #cac9c6;
 }
 .banner-text {
-  padding: 0 3%;
+  padding: 0 2%;
   text-align: left;
   position: relative;
-  display: flex;
-  top: 40%;
+  top: 22%;
   background: #e4e4e4;
-  min-width: 530px;
-  max-width: 530px;
+}
+.banner-icon-container {
+  left: 10px;
+  top: 291px;
+  position: relative;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  padding: 2%;
+}
+.banner-icon-container > svg {
+  fill: #353f56;
+  width: 100px;
+  height: 100px;
 }
 .banner-head {
-  font-size: 3em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
   color: black;
   -webkit-font-smoothing: antialiased;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: uppercase;
+}
+.banner-text_strong {
+  color: #353f56;
+  font-weight: 800;
 }
 .banner-body {
 }

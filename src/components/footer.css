@@ -1,12 +1,10 @@
-.footer {
+.Footer {
   height: 50px;
   position: relative;
-  bottom: -1px;
   width: 100%;
   margin: 0px 0%;
 }
 .footer-container {
-  margin: 0 6%;
   background-color: #1e2227;
   height: 100%;
   display: flex;

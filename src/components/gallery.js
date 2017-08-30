@@ -7,37 +7,20 @@ import yummly from '../assets/pictures/yummly.png'
 class Gallery extends Component {
   render() {
     return (
-      <section className="gallery">
+      <section className="Gallery">
         <div className="gallery-container">
-          <div className="head-container">
-            <h1 className="head_tag">Portfolio</h1>
+          <div className="gallery-head">
+            <span className="gallery-header">
+              <strong>Portfolio</strong>
+            </span>
           </div>
-          <div className="portfolio-container">
-            <div className="gallery-card">
-              <div className="gallery-card_upper">
-                <img src={trendr} className="gallery-card_img" />
-              </div>
-              <div className="gallery-card_lower">
-                <h3 className="gallery-card_tag">Trendr</h3>
-                <span className="gallery-card_description">Lorem Ipsum</span>
-              </div>
-            </div>
-            <div className="gallery-card">
-              <div className="gallery-card_upper">
-                <img src={yummly} className="gallery-card_img" />
-              </div>
-              <div className="gallery-card_lower">
-                <h3 className="gallery-card_tag">Yummly</h3>
-                <span className="gallery-card_description">Lorem Ipsum</span>
-              </div>
-            </div>
-            <div className="gallery-card">
-              <div className="gallery-card_upper">
-                <img src={travelbuddy} className="gallery-card_img" />
-              </div>
-              <div className="gallery-card_lower">
-                <h3 className="gallery-card_tag">TravelBuddy</h3>
-                <span className="gallery-card_description">Lorem Ipsum</span>
+          <div className="gallery-body">
+            <div className="portfolio-container">
+              <div className="portfolio-card">
+                <div className="portfolio-image">
+                  <img src="" alt="" />
+                </div>
+                <div className="portfolio-text" />
               </div>
             </div>
           </div>

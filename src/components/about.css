@@ -1,5 +1,5 @@
 .About {
-  height: 130vh;
+  height: 100%;
   background: #f1f1f1;
   -WEBKIT-FONT-SMOOTHING: antialiased;
 }
@@ -7,24 +7,27 @@
   background-color: #f1f1f1;
   padding: 1.5% 2%;
   margin: 0 6%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
 }
 .about-head {
-  padding-right: 5em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 1.5em 2em;
   margin: 1% 0%;
   background: #353f56;
 }
 .about-header {
+  font-family: 'Poppins', sans-serif;
   padding-right: 0.3em;
-  color: #4e749e;
-  -webkit-font-smoothing: auto;
+  color: #a6b2c4;
+  margin: 0 6%;
+  width: 100%;
+  text-align: -webkit-center;
+  -webkit-font-smoothing: antialiased;
   font-size: 3em;
   text-transform: uppercase;
-  -webkit-font-smoothing: auto;
-  font-weight: 500;
 }
 .about-header_strong {
   color: #f1f1f1;
@@ -35,70 +38,78 @@
 }
 .about-card {
   display: flex;
-  height: 370px;
-  box-shadow: 3px 3px 5px 6px #ccc;
+  max-height: 370px;
+  /*max-width: 879.5px;*/
+  /*box-shadow: 3px 3px 5px 6px #ccc;*/
 }
 .body {
   height: 100%;
 }
-.self-cont {
-  background: url('../assets/canyon.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 500px;
+.about-pic {
+  width: 493px;
+  min-height: 369px;
+  max-height: 369px;
 }
 .about-IMAGE {
   width: 100%;
 }
-.about-left-middle {
+.about-description {
+  background: #353f56;
   height: 370px;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
-.about-left-text {
-  justify-content: center;
-  align-content: center;
+.about-text_item {
+  color: white;
+  text-align: -webkit-center;
+  height: 210px;
+  display: flex;
   margin: 0 6%;
-  width: 100%;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
 }
 .about-left-head {
-  background: #353f56;
-  color: white;
-  padding: 0 3%;
-  font-size: 1.5em;
   font-weight: 500;
+  background: #a6b2c4;
+  color: white;
+  padding: 2% 3%;
+  font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: flex;
   justify-content: flex-start;
 }
-.about-text {
-}
-.about-body-right {
-  height: 500px;
-  width: 100%;
-}
-.right-col_text {
-  height: 100%;
-}
-.skills_container {
-  justify-content: space-around;
-  height: 370px;
+.about-icon-container {
   display: flex;
+  justify-content: space-around;
+  height: 100px;
+  padding-bottom: 4em;
+}
+.about-icon__card {
+  border-radius: 50%;
+  height: 75px;
   flex-direction: column;
+  text-align: -webkit-center;
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  fill: black;
+  background: #e4e4e4;
+  display: flex;
+  align-self: center;
 }
-.about-image {
-  width: 100%;
+.about-icon__card > span {
+  color: white;
 }
-.skill-icon_card {
-  padding: 5% 0;
+.about-icon__card:hover {
+  cursor: pointer;
+  background: #cac9c6;
+  fill: black;
+  color: black;
 }
-.skill-icon_card > svg {
-  height: 40px;
-  width: 50px;
-  border: 2px solid #353f56;
-  padding: 8px;
+.about-strong {
+  color: black;
 }

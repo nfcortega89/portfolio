@@ -4,7 +4,7 @@ import './footer.css'
 export default class Footer extends Component {
   render() {
     return (
-      <section className="footer">
+      <section className="Footer">
         <div className="footer-container">
           <div className="legal-container">
             <span className="footer-legal">
