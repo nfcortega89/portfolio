@@ -1,21 +1,7 @@
 import React, { Component } from "react";
 import "./nav.css";
-import firebase = require("firebase");
 
 export default class Banner extends Component {
-  constructor(props) {
-    super(props)
-  }
-  componentDidMount() {
-    let config = {
-        apiKey: "AIzaSyCWzG4ckpw89jbVHElXao18xpjodkKHNgE",
-        authDomain: "portfolio-e75e0.firebaseapp.com",
-        databaseURL: "https://portfolio-e75e0.firebaseio.com",
-        projectId: "portfolio-e75e0",
-        storageBucket: "portfolio-e75e0.appspot.com",
-        messagingSenderId: "98975036488"
-      };
-      firebase.initializeApp(config);
   render() {
     return (
       <section className="Nav">

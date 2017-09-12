@@ -23,9 +23,9 @@ export default class Testimonials extends Component {
               <hr />
             </span>
           </div>
-        </div>
-        <div className="quotes">
-          <span>''</span>
+          <div className="testimonial-image__container">
+            <img />
+          </div>
         </div>
       </section>
     );

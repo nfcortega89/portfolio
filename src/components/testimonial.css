@@ -1,24 +1,32 @@
 .Testimonial {
-  height: 80vh;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/pictures/city.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .testimonial-container {
-  height: 100%;
-  width: 100%;
 }
 .testimonial-header__container {
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
 .testimonial-header__container hr {
   width: 275px;
 }
 .testimonial-header__text {
-  color: black;
+  font-family: "Poppins";
+  color: white;
   text-transform: uppercase;
   font-size: 2.5em;
   font-weight: 500;
   letter-spacing: 2px;
 }
 .testimonial-body__container {
-  padding: 3em 0;
+  margin: 2em 24em;
+  text-align: -webkit-center;
 }
 .testimonial-body__container hr {
   width: 275px;
@@ -26,31 +34,24 @@
   top: 50px;
 }
 .testimonial-body__text {
-  background: #6c747d;
-  padding: 5em 4em;
-  margin: 0 17em;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  padding: 2em 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: -webkit-center;
   -webkit-font-smoothing: antialiased;
   color: white;
   font-weight: 800;
 }
-.quotes {
-  position: absolute;
-  bottom: -2042px;
-  left: 686px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #76fafc;
-  border-radius: 50%;
-}
-.quotes span {
+.testimonial-image__container {
+  background: antiquewhite;
   position: relative;
-  top: 27px;
-  font-size: 5em;
-  font-family: "Poppins";
+  top: -436px;
+  left: 653px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }

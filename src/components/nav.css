@@ -18,9 +18,9 @@
   -webkit-font-smoothing: antialiased;
   color: white;
   padding: 10px 20px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .nav-list__items:hover {
   cursor: pointer;
-  background: black;
+  background: #6f0819;
 }

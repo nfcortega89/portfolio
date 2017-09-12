@@ -1,5 +1,5 @@
 .Portfolio {
-  height: 120vh;
+  height: 954px;
 }
 .portfolio-container {
   height: 100%;
@@ -8,10 +8,8 @@
 .portfolio-header {
   padding: 1.5em 0;
 }
-.portfolio-header hr {
-  width: 250px;
-}
 .portfolio-header__text {
+  font-family: "Poppins";
   color: black;
   text-transform: uppercase;
   font-size: 2.5em;
@@ -19,12 +17,14 @@
   letter-spacing: 2px;
 }
 .portfolio-top {
+  height: 430px;
 }
 .portolio-top__left {
 }
 .portfolio-top__right {
 }
 .portfolio-bottom {
+  height: 430px;
 }
 .portfolio-bottom__left {
 }

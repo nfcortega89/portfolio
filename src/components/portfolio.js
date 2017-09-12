@@ -10,7 +10,6 @@ class Portfolio extends Component {
             <span className="portfolio-header__text">
               <a name="portfolio">Portfolio</a>
             </span>
-            <hr />
           </div>
           <div className="portfolio-top">
             <div className="portolio-top__left" />
