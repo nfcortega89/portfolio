@@ -1,91 +1,79 @@
-import React, { Component } from 'react'
-import './about.css'
-import self from '../assets/canyon.jpg'
+import React, { Component } from "react";
+import "./about.css";
+import self from "../assets/canyon.jpg";
 
 export default class About extends Component {
   render() {
     return (
       <section className="About">
-        <div className="about-head">
-          <span className="about-header">
-            About <strong className="about-header_strong">Me</strong>
-          </span>
-        </div>
+        <a name="services" />
         <div className="about-container">
-          <div className="about-card">
-            <div className="about-body">
-              <div className="about-pic">
-                <img className="about-IMAGE" src={self} />
+          <div className="about-left_container">
+            <div className="services-col">
+              <div className="service-header">
+                <span className="service-header__text">
+                  My <br />
+                  Services
+                </span>
+                <hr />
+              </div>
+              <div className="service-body">
+                <span className="service-body__text">
+                  I'm a Full-Stack <strong>Developer</strong> with a knack for
+                  problem solving. Always up for a challenge, I am passionate
+                  about working with others to create something great!
+                </span>
               </div>
             </div>
-            <div className="about-description">
-              <div className="about-text">
-                <div className="about-left_header">
-                  <span className="about-left-head">
-                    <strong>Niccolo </strong> Ortega
-                  </span>
-                </div>
-                <div className="about-left-body">
-                  <div className="about-text">
-                    <span className="about-text_item">
-                      I'm a Full-Stack Developer with a knack for problem
-                      solving. Always up for a challenge, I am passionate about
-                      working with others to create something great!
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="about-icon-container">
-                <div className="about-icon__card">
+          </div>
+          <div className="about-right__container">
+            <div className="about-icon__container">
+              <div className="about-icon__card">
+                <div className="about-icon__item">
                   <svg
-                    className="about-icon_item"
-                    height="24"
+                    fill="#000000"
+                    height="36"
                     viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
-                    <path d="M0 0h24v24H0z" fill="none" />
-                  </svg>
-                  <span>
-                    <strong className="about-strong">CSS</strong>
-                  </span>
-                </div>
-                <div className="about-icon__card">
-                  <svg
-                    className="about-icon_item"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                    width="36"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
                   </svg>
-                  <span>
-                    <strong className="about-strong">HTML5</strong>
-                  </span>
                 </div>
-                <div className="about-icon__card">
+                <span>Web Design</span>
+              </div>
+              <div className="about-icon__card">
+                <div className="about-icon__item">
                   <svg
-                    className="about-icon_item"
-                    height="24"
+                    fill="#000000"
+                    height="36"
                     viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z" />
+                    width="36"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
                   </svg>
-                  <span>
-                    <strong className="about-strong">JS</strong>
-                  </span>
                 </div>
+                <span>UI/UX</span>
+              </div>
+              <div className="about-icon__card">
+                <div className="about-icon__item">
+                  <svg
+                    fill="#000000"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z" />
+                  </svg>
+                </div>
+                <span>Development</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-    )
+    );
   }
 }

@@ -1,38 +1,43 @@
-import React, { Component } from 'react'
-import './nav.css'
-import headshot from '../assets/pictures/logo-headshot.png'
+import React, { Component } from "react";
+import "./nav.css";
+import firebase = require("firebase");
 
-class Nav extends Component {
+export default class Banner extends Component {
+  constructor(props) {
+    super(props)
+  }
+  componentDidMount() {
+    let config = {
+        apiKey: "AIzaSyCWzG4ckpw89jbVHElXao18xpjodkKHNgE",
+        authDomain: "portfolio-e75e0.firebaseapp.com",
+        databaseURL: "https://portfolio-e75e0.firebaseio.com",
+        projectId: "portfolio-e75e0",
+        storageBucket: "portfolio-e75e0.appspot.com",
+        messagingSenderId: "98975036488"
+      };
+      firebase.initializeApp(config);
   render() {
     return (
-      <div className="navbar">
-        <div className="logo-wrapper">
-          <div className="logo-headshot">
-            <img src={headshot} alt="Nikko Ortega" />
-          </div>
-          <div className="logo-text">
-            <span className="logo-text-top">
-              Nikko <strong>Ortega</strong>
-            </span>
-            <span className="logo-text-bottom">
-              <strong>Full-Stack</strong> Developer
-            </span>
-          </div>
+      <section className="Nav">
+        <div className="nav-logo-container">
+          <img />
         </div>
-        <ul className="navbar-list">
-          <li className="navbar-list_item">
-            <a>Home</a>
-          </li>
-          <li className="navbar-list_item">
-            <a>About</a>
-          </li>
-          <li className="navbar-list_item">
-            <a>Contact</a>
-          </li>
-        </ul>
-      </div>
-    )
+        <div className="nav-container">
+          <ul className="nav-list">
+            <li className="nav-list__items">Home</li>
+            <li className="nav-list__items">
+              <a href="#services">Services</a>
+            </li>
+            <li className="nav-list__items">
+              <a href="#portfolio">Portofilio</a>
+            </li>
+            <li className="nav-list__items">
+              <a href="#testimonial">Testimonial</a>
+            </li>
+            <li className="nav-list__items">Contact</li>
+          </ul>
+        </div>
+      </section>
+    );
   }
 }
-
-export default Nav

@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import Nav from './components/nav'
-import About from './components/about'
-import Banner from './components/banner'
-import Skills from './components/skills'
-import Gallery from './components/gallery'
-import Footer from './components/footer'
-import './App.css'
-import './index.css'
+import React, { Component } from "react";
+import About from "./components/about";
+import Nav from "./components/nav";
+import Banner from "./components/banner";
+import Testimonial from "./components/testimonial";
+import Portfolio from "./components/portfolio";
+import Footer from "./components/footer";
+import "./App.css";
+import "./index.css";
 
 class App extends Component {
   render() {
@@ -15,12 +15,12 @@ class App extends Component {
         <Nav />
         <Banner />
         <About />
-        <Skills />
-        <Gallery />
+        <Portfolio />
+        <Testimonial />
         <Footer />
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;

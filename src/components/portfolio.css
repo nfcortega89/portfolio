@@ -1,0 +1,32 @@
+.Portfolio {
+  height: 120vh;
+}
+.portfolio-container {
+  height: 100%;
+  width: 100%;
+}
+.portfolio-header {
+  padding: 1.5em 0;
+}
+.portfolio-header hr {
+  width: 250px;
+}
+.portfolio-header__text {
+  color: black;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.portfolio-top {
+}
+.portolio-top__left {
+}
+.portfolio-top__right {
+}
+.portfolio-bottom {
+}
+.portfolio-bottom__left {
+}
+.portfolio-bottom__right {
+}

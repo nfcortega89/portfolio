@@ -1,0 +1,56 @@
+.Testimonial {
+  height: 80vh;
+}
+.testimonial-container {
+  height: 100%;
+  width: 100%;
+}
+.testimonial-header__container {
+}
+.testimonial-header__container hr {
+  width: 275px;
+}
+.testimonial-header__text {
+  color: black;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.testimonial-body__container {
+  padding: 3em 0;
+}
+.testimonial-body__container hr {
+  width: 275px;
+  position: relative;
+  top: 50px;
+}
+.testimonial-body__text {
+  background: #6c747d;
+  padding: 5em 4em;
+  margin: 0 17em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  font-weight: 800;
+}
+.quotes {
+  position: absolute;
+  bottom: -2042px;
+  left: 686px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #76fafc;
+  border-radius: 50%;
+}
+.quotes span {
+  position: relative;
+  top: 27px;
+  font-size: 5em;
+  font-family: "Poppins";
+}
