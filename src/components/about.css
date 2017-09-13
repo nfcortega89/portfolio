@@ -46,6 +46,7 @@
 .service-body__text {
   color: white;
   font-weight: 500;
+  padding-top: 2em;
 }
 .about-right__container {
   width: 30%;
@@ -63,7 +64,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: transparent;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
 }
+/*.about-icon__card:hover {
+  background: #3cffbd;
+}*/
 .about-icon__card span {
   color: black;
   font-weight: 600;
@@ -71,8 +79,8 @@
   -webkit-font-smoothing: antialiased;
 }
 .about-icon__item {
-  width: 100px;
-  height: 100px;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;

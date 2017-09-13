@@ -5,6 +5,7 @@ export default class Footer extends Component {
   render() {
     return (
       <section className="Footer">
+        <a name="contact" />
         <div className="footer-container">
           <div className="icon-container">
             <a href="https://www.linkedin.com/in/niccolo-ortega-1b17bbb7/">

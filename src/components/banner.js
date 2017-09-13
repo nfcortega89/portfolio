@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import "./banner.css";
+import logo from "../assets/pictures/NFCO_01.png";
 
 export default class Banner extends Component {
   render() {
     return (
       <section className="Banner">
+        <a name="home" />
         <div className="banner-container">
-          <div className="banner-logo" />
+          <div className="banner-logo">
+            <a href="#home">
+              <img src={logo} />
+            </a>
+          </div>
           <div className="banner-header">
             <span className="banner-header__text">Niccolo Ortega</span>
             <br />

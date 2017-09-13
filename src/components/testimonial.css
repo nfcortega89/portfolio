@@ -10,8 +10,7 @@
 .testimonial-container {
 }
 .testimonial-header__container {
-  padding-top: 4em;
-  padding-bottom: 2em;
+  padding: 4em 0;
 }
 .testimonial-header__container hr {
   width: 275px;
@@ -49,8 +48,8 @@
 .testimonial-image__container {
   background: antiquewhite;
   position: relative;
-  top: -436px;
-  left: 653px;
+  top: -446px;
+  left: 661px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
