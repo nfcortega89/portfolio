@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import "./banner.css";
-import logo from "../assets/pictures/NFCO_01.png";
+import logo from "../assets/pictures/NFCO_02.png";
 
 export default class Banner extends Component {
   render() {
     return (
       <section className="Banner">
-        <a name="home" />
         <div className="banner-container">
           <div className="banner-logo">
-            <a href="#home">
-              <img src={logo} />
-            </a>
+            <img src={logo} />
           </div>
           <div className="banner-header">
             <span className="banner-header__text">Niccolo Ortega</span>
@@ -25,7 +22,11 @@ export default class Banner extends Component {
             </span>
             <hr />
           </div>
-          <button className="banner__button">Resume</button>
+          <button className="banner__button">
+            <a href="../assets/NIKKORESUME1.pdf" download>
+              Resume
+            </a>
+          </button>
           <div className="banner-icon-container">
             <svg
               fill="#FFFFFF"

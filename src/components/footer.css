@@ -26,3 +26,8 @@ i {
 i:hover {
   color: #3cffbd;
 }
+@media screen and (max-width: 767px) {
+  .Footer {
+    height: 20vh;
+  }
+}

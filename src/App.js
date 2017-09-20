@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import About from "./components/about";
 import Nav from "./components/nav";
 import Banner from "./components/banner";
 import Testimonial from "./components/testimonial";
@@ -14,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Banner />
-        <About />
+        {/* <About /> */}
         <Portfolio />
         <Testimonial />
         <Footer />

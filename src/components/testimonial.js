@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./testimonial.css";
+import Arthur from "../assets/pictures/arthur.png";
 
 export default class Testimonials extends Component {
   render() {
@@ -9,22 +10,23 @@ export default class Testimonials extends Component {
         <div className="testimonial-container">
           <div className="testimonial-header__container">
             <span className="testimonial-header__text">Testimonial</span>
-            <hr />
           </div>
           <div className="testimonial-body__container">
             <span className="testimonial-body__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Nikko is an ambitious, driven and excellent problem solver. As his
+              mentor, he has been an absolute pleasure to work with as he
+              constantly strives to achieve his goals creatively while using
+              best practices. His ability to work through difficult problems is
+              impressive and never gives up. I highly recommend Nikko as a
+              full-stack developer!
               <hr />
             </span>
           </div>
           <div className="testimonial-image__container">
-            <img />
+            <img src={Arthur} />
+          </div>
+          <div className="testimonial-name__container">
+            <span className="testimonial-name__text">Arthur Longbottom</span>
           </div>
         </div>
       </section>

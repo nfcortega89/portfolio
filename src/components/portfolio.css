@@ -1,32 +1,309 @@
 .Portfolio {
-  height: 954px;
+  height: 150vh;
 }
 .portfolio-container {
   height: 100%;
   width: 100%;
 }
 .portfolio-header {
+  animation: bounceInRight 3s;
   padding: 1.5em 0;
 }
 .portfolio-header__text {
   font-family: "Poppins";
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-size: 2.5em;
   font-weight: 500;
   letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
 }
-.portfolio-top {
-  height: 430px;
+.portfolio-header__text:hover {
 }
-.portolio-top__left {
+.portfolio-body {
+  padding-top: 1em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.portfolio-top__right {
+.portfolio .left-col {
+  height: 860px;
+  width: 50%;
 }
-.portfolio-bottom {
-  height: 430px;
+.portfolio .right-col {
+  width: 50%;
+  height: 860px;
 }
-.portfolio-bottom__left {
+.col {
+  display: flex;
+  flex-direction: column;
 }
-.portfolio-bottom__right {
+.trendr-wrapper {
+  cursor: pointer;
+  width: 400px;
+  height: 540px;
+  margin: 0.5em;
+}
+.trendr-image-container {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+.trendr-image-container.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.trendr {
+  width: 400px;
+  height: 540px;
+}
+.trendr-info {
+  color: white;
+  z-index: -5;
+  position: relative;
+  top: -544px;
+  width: 400px;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.trendr-header__text {
+  font-size: 2em;
+}
+.trendr-info hr {
+  width: 100%;
+}
+.trendr-info span {
+  font-weight: 500;
+}
+.yummly-wrapper {
+  cursor: pointer;
+  width: 400px;
+  height: 280px;
+  margin: 0.5em;
+}
+.yummly-image-container {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+.yummly-image-container.hide {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.yummly {
+  width: 400px;
+  height: 540px;
+}
+.yummly-info {
+  color: white;
+  z-index: -5;
+  position: relative;
+  top: -284px;
+  width: 400px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.yummly-header__text {
+  font-size: 2em;
+}
+.yummly-info hr {
+  width: 100%;
+}
+.yummly-info span {
+  font-weight: 500;
+}
+.airtime-wrapper {
+  width: 400px;
+  height: 540px;
+  cursor: pointer;
+  margin: 0.5em;
+}
+.airtime-image-container {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+.airtime-image-container.hide {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.airtime {
+  width: 400px;
+  height: 540px;
+}
+.airtime-info {
+  color: white;
+  z-index: -5;
+  position: relative;
+  top: -544px;
+  height: 540px;
+  width: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.airtime-header__text {
+  font-size: 2em;
+}
+.airtime-info hr {
+  width: 100%;
+}
+.airtime-info span {
+  font-weight: 500;
+}
+.traveler-wrapper {
+  cursor: pointer;
+  width: 400px;
+  height: 280px;
+  margin: 0.5em;
+}
+.traveler-image-container {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+.traveler-image-container.hide {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.traveler-info {
+  color: white;
+  z-index: -5;
+  position: relative;
+  top: -284px;
+  width: 400px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.traveler-header__text {
+  font-size: 2em;
+}
+.traveler-info hr {
+  width: 100%;
+}
+.traveler-info span {
+  font-weight: 500;
+}
+.yummly {
+  width: 100%;
+  height: 100%;
+}
+
+.traveler {
+  width: 100%;
+  height: 100%;
+}
+.airtime {
+  width: 100%;
+  height: 100%;
+}
+.portolio-body a {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Portfolio {
+    height: 230vh;
+  }
+  .portfolio-header__text {
+    font-size: 2em;
+  }
+  .portfolio-body {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .trendr-wrapper {
+    margin: 0;
+    width: 375px;
+    height: 370px;
+  }
+  .trendr-image-container img {
+    width: 375px;
+    height: 370px;
+  }
+  .trendr-info {
+    top: -374px;
+    width: 375px;
+    height: 370px;
+  }
+  .yummly-wrapper {
+    height: 263px;
+    width: 375px;
+    margin: 0;
+  }
+  .yummly-image-container img {
+    width: 375px;
+  }
+  .yummly-info {
+    top: -267px;
+    height: 263px;
+    width: 375px;
+  }
+  .traveler-image-container img {
+    width: 375px;
+  }
+  .traveler-wrapper {
+    height: 263px;
+    width: 375px;
+    margin: 0;
+  }
+  .traveler-info {
+    top: -267px;
+    height: 263px;
+    width: 375px;
+  }
+  .airtime-wrapper {
+    margin: 0;
+    width: 375px;
+    height: 370px;
+  }
+  .airtime-image-container img {
+    width: 375px;
+    height: 370px;
+  }
+  .airtime-info {
+    width: 375px;
+    height: 370px;
+    top: -374px;
+  }
 }
