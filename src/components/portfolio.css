@@ -1,6 +1,10 @@
 .Portfolio {
   height: 150vh;
 }
+.Portfolio a {
+  color: white;
+  text-decoration: none;
+}
 .portfolio-container {
   height: 100%;
   width: 100%;
@@ -46,6 +50,7 @@
   margin: 0.5em;
 }
 .trendr-image-container {
+  z-index: -5;
   transition: all 1s ease-in-out;
   opacity: 1;
 }
@@ -58,8 +63,11 @@
   height: 540px;
 }
 .trendr-info {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  background-color: #1e2227;
   color: white;
-  z-index: -5;
+  z-index: 10;
   position: relative;
   top: -544px;
   width: 400px;
@@ -68,6 +76,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.trendr-info.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  top: -544px;
+  width: 400px;
+  height: 540px;
+  z-index: 10;
 }
 .trendr-header__text {
   font-size: 2em;
@@ -85,6 +102,7 @@
   margin: 0.5em;
 }
 .yummly-image-container {
+  z-index: -5;
   transition: all 1s ease-in-out;
   opacity: 1;
 }
@@ -97,8 +115,11 @@
   height: 540px;
 }
 .yummly-info {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  background-color: #1e2227;
   color: white;
-  z-index: -5;
+  z-index: 10;
   position: relative;
   top: -284px;
   width: 400px;
@@ -107,6 +128,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.yummly-info.hide {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  z-index: 10;
+  position: relative;
+  top: -284px;
+  width: 400px;
+  height: 280px;
 }
 .yummly-header__text {
   font-size: 2em;
@@ -136,17 +166,27 @@
   height: 540px;
 }
 .airtime-info {
+  background-color: #1e2227;
+  transition: all 1s ease-in-out;
+  opacity: 1;
   color: white;
-  z-index: -5;
+  z-index: 10;
   position: relative;
   top: -544px;
   height: 540px;
   width: 400px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.airtime-info.hide {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  position: relative;
+  top: -544px;
+  height: 540px;
+  width: 400px;
 }
 .airtime-header__text {
   font-size: 2em;
@@ -172,8 +212,11 @@
   opacity: 0;
 }
 .traveler-info {
+  background-color: #1e2227;
+  transition: all 1s ease-in-out;
+  opacity: 1;
   color: white;
-  z-index: -5;
+  z-index: 10;
   position: relative;
   top: -284px;
   width: 400px;
@@ -182,6 +225,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.traveler-info.hide {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  position: relative;
+  top: -284px;
+  width: 400px;
+  height: 280px;
 }
 .traveler-header__text {
   font-size: 2em;
@@ -307,3 +358,6 @@
     top: -374px;
   }
 }
+transition: all 1s ease-in-out;
+opacity: 1;
+background-color: #1e2227;

@@ -4,18 +4,87 @@ import Airtime from "../assets/pictures/Airtime2.png";
 import Traveler from "../assets/pictures/TC2.png";
 import Yummly from "../assets/pictures/Yummly2.png";
 import Trendr from "../assets/pictures/Trendr2.png";
+import firebase from "firebase";
 
 class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      openTrendr: true,
+      openYummly: true,
+      openAirtime: true,
+      openTraveler: true,
+      showTrendrImage: false,
+      showYummlyImage: false,
+      showTravelerImage: false,
+      showAirtimeImage: false
     };
+    this.toggleTrendrMenu = this.toggleTrendrMenu.bind(this);
+    this.toggleYummlyMenu = this.toggleYummlyMenu.bind(this);
+    this.toggleAirtimeMenu = this.toggleAirtimeMenu.bind(this);
+    this.toggleTravlerMenu = this.toggleTravlerMenu.bind(this);
+    this.toggleTrendrInfo = this.toggleTrendrInfo.bind(this);
+    this.toggleYummlyInfo = this.toggleYummlyInfo.bind(this);
+    this.toggleTravelerInfo = this.toggleTravelerInfo.bind(this);
+    this.toggleAirtimeInfo = this.toggleAirtimeInfo.bind(this);
   }
-  toggleMenu() {
-    const isOpen = this.state.open;
+  componentDidMount() {
+    const config = {
+      apiKey: "AIzaSyCWzG4ckpw89jbVHElXao18xpjodkKHNgE",
+      authDomain: "portfolio-e75e0.firebaseapp.com",
+      databaseURL: "https://portfolio-e75e0.firebaseio.com",
+      projectId: "portfolio-e75e0",
+      storageBucket: "portfolio-e75e0.appspot.com",
+      messagingSenderId: "98975036488"
+    };
+    firebase.initializeApp(config);
+  }
+  toggleTrendrMenu() {
+    const trendrOpen = this.state.openTrendr;
     this.setState({
-      open: !isOpen
+      openTrendr: !trendrOpen
+    });
+  }
+  toggleYummlyMenu() {
+    const yummlyOpen = this.state.openYummly;
+    this.setState({
+      openYummly: !yummlyOpen
+    });
+  }
+  toggleAirtimeMenu() {
+    const airtimeOpen = this.state.openAirtime;
+    this.setState({
+      openAirtime: !airtimeOpen
+    });
+  }
+  toggleTravlerMenu() {
+    const travelerOpen = this.state.openTraveler;
+    this.setState({
+      openTraveler: !travelerOpen
+    });
+  }
+  toggleTrendrInfo() {
+    const isShowing = this.state.showTrendrImage;
+    this.setState({
+      showTrendrImage: !isShowing
+    });
+  }
+  toggleYummlyInfo() {
+    const isShowing = this.state.showYummlyImage;
+    this.setState({
+      showYummlyImage: !isShowing
+    });
+  }
+  toggleTravelerInfo() {
+    const isShowing = this.state.showTravelerImage;
+    this.setState({
+      showTravelerImage: !isShowing
+    });
+  }
+  toggleAirtimeInfo() {
+    const isShowing = this.state.showAirtimeImage;
+    this.setState({
+      showAirtimeImage: !isShowing
     });
   }
   render() {
@@ -29,10 +98,12 @@ class Portfolio extends Component {
           </div>
           <div className="portfolio-body">
             <div className="portfolio left-col col ">
-              <div onClick={() => this.toggleMenu()} className="trendr-wrapper">
+              <div
+                onClick={() => this.toggleTrendrMenu()}
+                className="trendr-wrapper">
                 <div
                   className={
-                    this.state.open ? (
+                    this.state.openTrendr ? (
                       "trendr-image-container"
                     ) : (
                       "trendr-image-container hide"
@@ -41,7 +112,15 @@ class Portfolio extends Component {
                   <img src={Trendr} className="trendr" />
                 </div>
 
-                <div className="trendr-info">
+                <div
+                  onClick={() => this.toggleTrendrInfo()}
+                  className={
+                    this.state.showTrendrImage ? (
+                      "trendr-info "
+                    ) : (
+                      "trendr-info hide"
+                    )
+                  }>
                   <div classname="trendr-info-header">
                     <span className="trendr-header__text">
                       <strong>Trendr</strong>
@@ -63,21 +142,39 @@ class Portfolio extends Component {
                     <br />
                     <br />
                     <span>
-                      Repo: https://github.com/nfcortega89/trendr
+                      Repo:{" "}
+                      <a
+                        target="_blank"
+                        href="https://github.com/nfcortega89/trendr">
+                        https://github.com/nfcortega89/trendr
+                      </a>
                       <br />
-                      https://github.com/nfcortega89/trendr-client
+                      <a
+                        target="_blank"
+                        href="https://github.com/nfcortega89/trendr-client">
+                        https://github.com/nfcortega89/trendr-client
+                      </a>
                       <br />
                     </span>
                     <br />
                     <br />
-                    <span>Url: https://trendr-3eddc.firebaseapp.com</span>
+                    <span>
+                      Url:{" "}
+                      <a
+                        target="_blank"
+                        href="https://trendr-3eddc.firebaseapp.com">
+                        https://trendr-3eddc.firebaseapp.com
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
-              <div onClick={() => this.toggleMenu()} className="yummly-wrapper">
+              <div
+                onClick={() => this.toggleYummlyMenu()}
+                className="yummly-wrapper">
                 <div
                   className={
-                    this.state.open ? (
+                    this.state.openYummly ? (
                       "yummly-image-container"
                     ) : (
                       "yummly-image-container hide"
@@ -85,7 +182,15 @@ class Portfolio extends Component {
                   }>
                   <img src={Yummly} className="yummly" />
                 </div>
-                <div className="yummly-info">
+                <div
+                  onClick={() => this.toggleYummlyInfo()}
+                  className={
+                    this.state.showYummlyImage ? (
+                      "yummly-info "
+                    ) : (
+                      "yummly-info hide"
+                    )
+                  }>
                   <div classname="yummly-info-header">
                     <span className="yummly-header__text">
                       <strong>Yummly</strong>
@@ -101,14 +206,24 @@ class Portfolio extends Component {
                     </p>
                     <span>Stack: JQuery, Express, Unirest, Node, Nodemon</span>
                     <br />
+                    <br />
                     <span>
-                      Repo: https://github.com/nfcortega89/yummly
+                      Repo:{" "}
+                      <a
+                        target="_blank"
+                        href="https://github.com/nfcortega89/capstone2">
+                        https://github.com/nfcortega89/yummly
+                      </a>
                       <br />
                     </span>
                     <br />
-                    <br />
                     <span>
-                      Url: https://limitless-mountain-11507.herokuapp.com/
+                      Url:{" "}
+                      <a
+                        target="_blank"
+                        href="https://limitless-mountain-11507.herokuapp.com/">
+                        https://limitless-mountain-11507.herokuapp.com/
+                      </a>
                     </span>
                   </div>
                 </div>
@@ -116,11 +231,11 @@ class Portfolio extends Component {
             </div>
             <div className="portfolio right-col col">
               <div
-                onClick={() => this.toggleMenu()}
+                onClick={() => this.toggleTravlerMenu()}
                 className="traveler-wrapper">
                 <div
                   className={
-                    this.state.open ? (
+                    this.state.openTraveler ? (
                       "traveler-image-container"
                     ) : (
                       "traveler-image-container hide"
@@ -128,7 +243,15 @@ class Portfolio extends Component {
                   }>
                   <img src={Traveler} className="traveler" />
                 </div>
-                <div className="traveler-info">
+                <div
+                  onClick={() => this.toggleTravelerInfo()}
+                  className={
+                    this.state.showTravelerImage ? (
+                      "traveler-info "
+                    ) : (
+                      "traveler-info hide"
+                    )
+                  }>
                   <div classname="traveler-info-header">
                     <span className="traveler-header__text">
                       <strong>Travelers Companion</strong>
@@ -142,8 +265,14 @@ class Portfolio extends Component {
                     </p>
                     <span>Stack: JQuery</span>
                     <br />
+                    <br />
                     <span>
-                      Repo: https://github.com/nfcortega89/CS1
+                      Repo:{" "}
+                      <a
+                        target="_blank"
+                        href="https://github.com/nfcortega89/CS1">
+                        https://github.com/nfcortega89/CS1
+                      </a>
                       <br />
                     </span>
                     <br />
@@ -152,11 +281,11 @@ class Portfolio extends Component {
                 </div>
               </div>
               <div
-                onClick={() => this.toggleMenu()}
+                onClick={() => this.toggleAirtimeMenu()}
                 className="airtime-wrapper">
                 <div
                   className={
-                    this.state.open ? (
+                    this.state.openAirtime ? (
                       "airtime-image-container"
                     ) : (
                       "airtime-image-container hide"
@@ -164,7 +293,15 @@ class Portfolio extends Component {
                   }>
                   <img src={Airtime} className="airtime" />
                 </div>
-                <div className="airtime-info">
+                <div
+                  onClick={() => this.toggleAirtimeInfo()}
+                  className={
+                    this.state.showAirtimeImage ? (
+                      "airtime-info "
+                    ) : (
+                      "airtime-info hide"
+                    )
+                  }>
                   <div classname="airtime-info-header">
                     <span className="airtime-header__text">
                       <strong>Airtime</strong>
@@ -180,8 +317,14 @@ class Portfolio extends Component {
                     </p>
                     <span>Stack: React, Nodemon, Node</span>
                     <br />
+                    <br />
                     <span>
-                      Repo: https://github.com/nfcortega89/airtime
+                      Repo:{" "}
+                      <a
+                        target="_blank"
+                        href="https://github.com/nfcortega89/airtime">
+                        https://github.com/nfcortega89/airtime
+                      </a>
                       <br />
                     </span>
                     <br />

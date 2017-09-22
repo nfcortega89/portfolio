@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import "./banner.css";
 import logo from "../assets/pictures/NFCO_02.png";
+import Resume from "../assets/NIKKORESUME1.pdf";
 
 export default class Banner extends Component {
   render() {
     return (
       <section className="Banner">
+        <a name="home" />
         <div className="banner-container">
           <div className="banner-logo">
             <img src={logo} />
@@ -23,7 +25,7 @@ export default class Banner extends Component {
             <hr />
           </div>
           <button className="banner__button">
-            <a href="../assets/NIKKORESUME1.pdf" download>
+            <a href={Resume} download>
               Resume
             </a>
           </button>
