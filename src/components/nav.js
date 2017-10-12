@@ -44,6 +44,9 @@ export default class Banner extends Component {
               <a href="#home">Home</a>
             </li>
             <li className="nav-list__items">
+              <a href="#about">About</a>
+            </li>
+            <li className="nav-list__items">
               <a href="#portfolio">Portofilio</a>
             </li>
             <li className="nav-list__items">

@@ -103,11 +103,9 @@ class Portfolio extends Component {
                 className="trendr-wrapper">
                 <div
                   className={
-                    this.state.openTrendr ? (
-                      "trendr-image-container"
-                    ) : (
-                      "trendr-image-container hide"
-                    )
+                    this.state.openTrendr
+                      ? "trendr-image-container"
+                      : "trendr-image-container hide"
                   }>
                   <img src={Trendr} className="trendr" />
                 </div>
@@ -115,11 +113,9 @@ class Portfolio extends Component {
                 <div
                   onClick={() => this.toggleTrendrInfo()}
                   className={
-                    this.state.showTrendrImage ? (
-                      "trendr-info "
-                    ) : (
-                      "trendr-info hide"
-                    )
+                    this.state.showTrendrImage
+                      ? "trendr-info "
+                      : "trendr-info hide"
                   }>
                   <div classname="trendr-info-header">
                     <span className="trendr-header__text">
@@ -174,22 +170,18 @@ class Portfolio extends Component {
                 className="yummly-wrapper">
                 <div
                   className={
-                    this.state.openYummly ? (
-                      "yummly-image-container"
-                    ) : (
-                      "yummly-image-container hide"
-                    )
+                    this.state.openYummly
+                      ? "yummly-image-container"
+                      : "yummly-image-container hide"
                   }>
                   <img src={Yummly} className="yummly" />
                 </div>
                 <div
                   onClick={() => this.toggleYummlyInfo()}
                   className={
-                    this.state.showYummlyImage ? (
-                      "yummly-info "
-                    ) : (
-                      "yummly-info hide"
-                    )
+                    this.state.showYummlyImage
+                      ? "yummly-info "
+                      : "yummly-info hide"
                   }>
                   <div classname="yummly-info-header">
                     <span className="yummly-header__text">
@@ -235,22 +227,18 @@ class Portfolio extends Component {
                 className="traveler-wrapper">
                 <div
                   className={
-                    this.state.openTraveler ? (
-                      "traveler-image-container"
-                    ) : (
-                      "traveler-image-container hide"
-                    )
+                    this.state.openTraveler
+                      ? "traveler-image-container"
+                      : "traveler-image-container hide"
                   }>
                   <img src={Traveler} className="traveler" />
                 </div>
                 <div
                   onClick={() => this.toggleTravelerInfo()}
                   className={
-                    this.state.showTravelerImage ? (
-                      "traveler-info "
-                    ) : (
-                      "traveler-info hide"
-                    )
+                    this.state.showTravelerImage
+                      ? "traveler-info "
+                      : "traveler-info hide"
                   }>
                   <div classname="traveler-info-header">
                     <span className="traveler-header__text">
@@ -285,22 +273,18 @@ class Portfolio extends Component {
                 className="airtime-wrapper">
                 <div
                   className={
-                    this.state.openAirtime ? (
-                      "airtime-image-container"
-                    ) : (
-                      "airtime-image-container hide"
-                    )
+                    this.state.openAirtime
+                      ? "airtime-image-container"
+                      : "airtime-image-container hide"
                   }>
                   <img src={Airtime} className="airtime" />
                 </div>
                 <div
                   onClick={() => this.toggleAirtimeInfo()}
                   className={
-                    this.state.showAirtimeImage ? (
-                      "airtime-info "
-                    ) : (
-                      "airtime-info hide"
-                    )
+                    this.state.showAirtimeImage
+                      ? "airtime-info "
+                      : "airtime-info hide"
                   }>
                   <div classname="airtime-info-header">
                     <span className="airtime-header__text">
@@ -310,10 +294,11 @@ class Portfolio extends Component {
                   <hr />
                   <div className="airtime-info-body">
                     <p>
-                      Airtime is a powerful app made to help check weather
-                      conditions to make fly drones easier. With Airtime the
-                      user can is shown legal fly-zones in San Diego along with
-                      the current weather conditions, wind speed, and humidity.
+                      Airtime is a powerful app made to help the user check
+                      weather conditions to make flying drones easier. With
+                      Airtime the user is given a variety of legal fly-zones in
+                      San Diego along with the current weather conditions, wind
+                      speed, and humidity.
                     </p>
                     <span>Stack: React, Nodemon, Node</span>
                     <br />
@@ -328,7 +313,12 @@ class Portfolio extends Component {
                       <br />
                     </span>
                     <br />
-                    <br />
+                    Url:{" "}
+                    <a
+                      target="_blank"
+                      href="https://advocate-bear-76680.netlify.com/">
+                      https://advocate-bear-76680.netlify.com/
+                    </a>
                   </div>
                 </div>
               </div>

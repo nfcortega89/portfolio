@@ -1,5 +1,5 @@
 .Testimonial {
-  height: 75vh;
+  height: 85vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/pictures/city.jpg");
@@ -11,6 +11,8 @@
   height: 75vh;
 }
 .testimonial-header__container {
+  display: flex;
+  justify-content: center;
   padding: 2em 0 7em;
   animation: bounceInLeft 3s;
 }
@@ -36,6 +38,7 @@
   top: 50px;
 }
 .testimonial-body__text {
+  line-height: 1.5em;
   font-size: 20px;
   background: transparent;
   color: white;
@@ -50,7 +53,7 @@
 }
 .testimonial-image__container {
   position: relative;
-  top: -440px;
+  top: -489px;
   left: 661px;
   width: 100px;
   height: 100px;
@@ -62,8 +65,10 @@
   width: 100%;
 }
 .testimonial-name__container {
+  top: -485px;
+  display: flex;
+  justify-content: center;
   position: relative;
-  top: -427px;
 }
 .testimonial-name__text {
   text-transform: uppercase;

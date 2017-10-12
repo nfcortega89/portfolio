@@ -10,6 +10,8 @@
   width: 100%;
 }
 .portfolio-header {
+  display: flex;
+  justify-content: center;
   animation: bounceInRight 3s;
   padding: 1.5em 0;
 }
@@ -25,6 +27,7 @@
 .portfolio-header__text:hover {
 }
 .portfolio-body {
+  text-align: center;
   padding-top: 1em;
   align-items: center;
   display: flex;
@@ -357,7 +360,16 @@
     height: 370px;
     top: -374px;
   }
+  .trendr-header__text {
+    font-size: 1.5em;
+  }
+  .yummly-header__text {
+    font-size: 1.5em;
+  }
+  .travelerheader__text {
+    font-size: 1.5em;
+  }
+  .airtime-header__text {
+    font-size: 1.5em;
+  }
 }
-transition: all 1s ease-in-out;
-opacity: 1;
-background-color: #1e2227;
