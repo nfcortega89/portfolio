@@ -185,16 +185,16 @@ class Portfolio extends Component {
                   }>
                   <div classname="yummly-info-header">
                     <span className="yummly-header__text">
-                      <strong>Yummly</strong>
+                      <strong>Who's Hungry</strong>
                     </span>
                   </div>
                   <hr />
                   <div className="yummly-info-body">
                     <p>
-                      Yummly is a food app designed to promote healthy eating.
-                      For those who are tired of eating the same bland food,
-                      it's time to spice things up and concoct delicious yet
-                      healthy meals. Powered by Yummly
+                      Who's Hungry is a food app designed to promote healthy
+                      eating. For those who are tired of eating the same bland
+                      food, it's time to spice things up and concoct delicious
+                      yet healthy meals. Powered by Yummly
                     </p>
                     <span>Stack: JQuery, Express, Unirest, Node, Nodemon</span>
                     <br />

@@ -39,6 +39,9 @@
   z-index: -2;
 }
 @media screen and (max-width: 767px) {
+  .Nav {
+    z-index: 999;
+  }
   .navbar {
     display: flex;
     align-items: center;
@@ -52,9 +55,7 @@
     flex-direction: column;
   }
   .dropdown {
-    z-index: 999;
     position: absolute;
-    top: 10px;
     left: 0;
     width: 100%;
     background-color: #1f2328;
