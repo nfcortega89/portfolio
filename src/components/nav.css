@@ -33,7 +33,7 @@
 }
 .nav-list__items:hover {
   cursor: pointer;
-  background: #3cffbd;
+  background: #000000;
 }
 .dropdown {
   z-index: -2;

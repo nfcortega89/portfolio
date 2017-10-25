@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900");
+
 * {
   box-sizing: border-box;
 }
@@ -9,4 +10,10 @@ body {
   padding: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    width: 413px;
+  }
 }

@@ -313,12 +313,14 @@ class Portfolio extends Component {
                       <br />
                     </span>
                     <br />
-                    Url:{" "}
-                    <a
-                      target="_blank"
-                      href="https://advocate-bear-76680.netlify.com/">
-                      https://advocate-bear-76680.netlify.com/
-                    </a>
+                    <span>
+                      Url:{" "}
+                      <a
+                        target="_blank"
+                        href="https://advocate-bear-76680.netlify.com/">
+                        https://advocate-bear-76680.netlify.com/
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>

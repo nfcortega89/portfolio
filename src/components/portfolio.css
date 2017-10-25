@@ -297,7 +297,7 @@
 }
 @media screen and (max-width: 767px) {
   .Portfolio {
-    height: 230vh;
+    height: 209vh;
   }
   .portfolio-header__text {
     font-size: 2em;
@@ -307,7 +307,7 @@
     padding-top: 0;
   }
   .trendr-wrapper {
-    margin: 0;
+    margin: 0.5em 0;
     width: 375px;
     height: 370px;
   }
@@ -323,7 +323,7 @@
   .yummly-wrapper {
     height: 263px;
     width: 375px;
-    margin: 0;
+    margin: 0.5em 0;
   }
   .yummly-image-container img {
     width: 375px;
@@ -339,7 +339,7 @@
   .traveler-wrapper {
     height: 263px;
     width: 375px;
-    margin: 0;
+    margin: 0.5em 0;
   }
   .traveler-info {
     top: -267px;
@@ -347,7 +347,7 @@
     width: 375px;
   }
   .airtime-wrapper {
-    margin: 0;
+    margin: 0.5em 0;
     width: 375px;
     height: 370px;
   }
@@ -371,5 +371,37 @@
   }
   .airtime-header__text {
     font-size: 1.5em;
+  }
+  .trendr-info-body p,
+  .yummly-info-body p,
+  .traveler-info-body p,
+  .airtime-info-body p {
+    width: 375px;
+    font-size: 0.8em;
+  }
+  .airtime-info,
+  .trendr-info,
+  .traveler-info,
+  .yummly-info {
+    width: 375px;
+  }
+  .trendr-info-body span,
+  .yummly-info-body span,
+  .traveler-info-body span,
+  .airtime-info-body span {
+    font-size: 0.8em;
+  }
+  .yummly-header__text,
+  .trendr-header__text,
+  .airtime-header__text,
+  .traveler-header__text {
+    font-size: 1.5em;
+  }
+  .airtime-info.hide,
+  .yummly-info.hide,
+  .traveler-info.hide,
+  .trendr-info.hide {
+    width: 375px;
+    line-height: 17px;
   }
 }

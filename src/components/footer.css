@@ -24,7 +24,7 @@ i {
   padding: 10px 20px;
 }
 i:hover {
-  color: #3cffbd;
+  color: #000000;
 }
 @media screen and (max-width: 767px) {
   .Footer {

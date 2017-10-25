@@ -53,14 +53,15 @@
   width: 215px;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
-  color: white;
+  color: black;
   font-weight: 400;
 }
 .box-decor {
   position: relative;
   border: 5px solid white;
   z-index: -5;
-  top: -19px;
+  background: #ebeae5;
+  top: -60px;
   left: 135px;
   width: 380px;
   height: 570vh;
@@ -94,5 +95,39 @@
 
   to {
     transform: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .About {
+    height: 50vh;
+  }
+  .about-body__container {
+    flex-direction: column;
+    padding: 0;
+    height: 360px;
+  }
+  .about-image__container {
+    display: none;
+  }
+  .about-right {
+    position: relative;
+    margin: 0;
+    width: 315px;
+    left: 40px;
+    padding-top: 0px;
+    align-items: flex-start;
+    height: 360px;
+  }
+  .box-decor {
+    display: none;
+  }
+  .about-body__text {
+    text-align: justify;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+  }
+  .about-header__text {
+    font-size: 2em;
   }
 }

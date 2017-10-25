@@ -111,6 +111,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .Portfolio {
+    height: 220vh;
+  }
   .testimonial-header__text {
     font-size: 2em;
   }
@@ -128,10 +131,13 @@
     font-size: 15px;
   }
   .testimonial-image__container {
-    left: 135px;
-    top: -440px;
+    left: 147px;
+    top: -448px;
   }
   .testimonial-name__container {
-    top: -431px;
+    top: -454px;
+  }
+  .testimonial-name__text {
+    padding-top: 48px;
   }
 }
