@@ -7,7 +7,7 @@ export default class Banner extends Component {
   render() {
     return (
       <section className="Banner">
-        <a name="home" />
+        <a id="home" name="home" />
         <div className="banner-container">
           <div className="banner-logo">
             <img src={logo} />

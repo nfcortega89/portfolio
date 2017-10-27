@@ -89,7 +89,7 @@ class Portfolio extends Component {
   }
   render() {
     return (
-      <section className="Portfolio">
+      <section id="portfolio" className="Portfolio">
         <div className="portfolio-container">
           <div className="portfolio-header">
             <span className="portfolio-header__text">

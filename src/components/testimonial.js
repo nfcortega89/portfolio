@@ -6,7 +6,7 @@ export default class Testimonials extends Component {
   render() {
     return (
       <section className="Testimonial">
-        <a name="testimonial" />
+        <a id="testimonial" name="testimonial" />
         <div className="testimonial-container">
           <div className="testimonial-header__container">
             <span className="testimonial-header__text">Testimonial</span>

@@ -2,12 +2,106 @@ import React, { Component } from "react";
 import "./nav.css";
 import logo from "../assets/pictures/NFCO_02.png";
 
+let smoothScroll = {
+  timer: null,
+
+  stop: function() {
+    clearTimeout(this.timer);
+  },
+
+  scrollTo: function(id, callback) {
+    let settings = {
+      duration: 1000,
+      easing: {
+        outQuint: function(x, t, b, c, d) {
+          return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+        }
+      }
+    };
+    let percentage;
+    let startTime;
+    let node = document.getElementById(id);
+    let nodeTop = node.offsetTop;
+    let nodeHeight = node.offsetHeight;
+    let body = document.body;
+    let html = document.documentElement;
+    let height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+    let windowHeight = window.innerHeight;
+    let offset = window.pageYOffset;
+    let delta = nodeTop - offset;
+    let bottomScrollableY = height - windowHeight;
+    let targetY =
+      bottomScrollableY < delta
+        ? bottomScrollableY - (height - nodeTop - nodeHeight + offset)
+        : delta;
+
+    startTime = Date.now();
+    percentage = 0;
+
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
+
+    function step() {
+      let yScroll;
+      let elapsed = Date.now() - startTime;
+
+      if (elapsed > settings.duration) {
+        clearTimeout(this.timer);
+      }
+
+      percentage = elapsed / settings.duration;
+
+      if (percentage > 1) {
+        clearTimeout(this.timer);
+
+        if (callback) {
+          callback();
+        }
+      } else {
+        yScroll = settings.easing.outQuint(
+          0,
+          elapsed,
+          offset,
+          targetY,
+          settings.duration
+        );
+        window.scrollTo(0, yScroll);
+        this.timer = setTimeout(step, 10);
+      }
+    }
+
+    this.timer = setTimeout(step, 10);
+  }
+};
+
 export default class Banner extends Component {
   constructor(props) {
     super(props);
     this.state = {
       open: false
     };
+  }
+  handleTestimonialClick() {
+    smoothScroll.scrollTo("testimonial");
+  }
+  handleAboutClick() {
+    smoothScroll.scrollTo("about");
+  }
+  handleHomeClick() {
+    smoothScroll.scrollTo("home");
+  }
+  handlePortFolioClick() {
+    smoothScroll.scrollTo("portfolio");
+  }
+  handleContactClick() {
+    smoothScroll.scrollTo("contact");
   }
   toggleMenu() {
     const isOpen = this.state.open;
@@ -41,19 +135,19 @@ export default class Banner extends Component {
           }}>
           <ul className="nav-list">
             <li className="nav-list__items">
-              <a href="#home">Home</a>
+              <a onClick={this.handleHomeClick}>Home</a>
             </li>
             <li className="nav-list__items">
-              <a href="#about">About</a>
+              <a onClick={this.handleAboutClick}>About</a>
             </li>
             <li className="nav-list__items">
-              <a href="#portfolio">Portofilio</a>
+              <a onClick={this.handlePortFolioClick}>Portofilio</a>
             </li>
             <li className="nav-list__items">
-              <a href="#testimonial">Testimonial</a>
+              <a onClick={this.handleTestimonialClick}>Testimonial</a>
             </li>
             <li className="nav-list__items">
-              <a href="#contact">Contact</a>
+              <a onClick={this.handleContactClick}>Contact</a>
             </li>
           </ul>
         </div>

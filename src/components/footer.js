@@ -4,7 +4,7 @@ import "./footer.css";
 export default class Footer extends Component {
   render() {
     return (
-      <section className="Footer">
+      <section id="contact" className="Footer">
         <a name="contact" />
         <div className="footer-container">
           <div className="icon-container">

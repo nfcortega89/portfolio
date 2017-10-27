@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     return (
       <section className="About">
-        <a name="about" />
+        <a id="about" name="about" />
         <div className="about-container">
           <div className="about-header__container">
             <span className="about-header__text">About Me</span>
