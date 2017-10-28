@@ -384,6 +384,9 @@
   .traveler-info,
   .yummly-info {
     width: 375px;
+    height: 375px;
+    line-height: 17px;
+    top: -375px;
   }
   .trendr-info-body span,
   .yummly-info-body span,
