@@ -27,7 +27,6 @@ class About extends Component {
               </span>
             </div>
           </div>
-          <div className="box-decor" />
         </div>
       </section>
     );

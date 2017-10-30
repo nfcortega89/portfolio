@@ -297,7 +297,7 @@
 }
 @media screen and (max-width: 767px) {
   .Portfolio {
-    height: 209vh;
+    height: 220vh;
   }
   .portfolio-header__text {
     font-size: 2em;

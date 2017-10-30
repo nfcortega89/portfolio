@@ -26,6 +26,7 @@
   height: 100%;
 }
 .banner-header {
+  text-align: center;
   margin-top: -68px;
 }
 .banner-header__text {
