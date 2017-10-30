@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./banner.css";
 import logo from "../assets/pictures/NFCO_02.png";
-import Resume from "../assets/NIKKORESUME1.pdf";
+import Resume from "../assets/NFCOResumeV3.pdf";
 
 export default class Banner extends Component {
   render() {
