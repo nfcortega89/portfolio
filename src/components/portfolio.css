@@ -1,5 +1,5 @@
 .Portfolio {
-  height: 150vh;
+  height: 110vh;
 }
 .Portfolio a {
   color: white;
@@ -295,9 +295,86 @@
     transform: none;
   }
 }
+.work-wrapper {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 540px;
+  margin: 0.5em;
+  padding: 0.5em;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/pictures/WhosHungry.png");
+}
+.work-wrapper:hover {
+  cursor: pointer;
+  display: flex;
+  flex: 4;
+  width: 330px;
+  height: 570px;
+  transition: all 0.4s ease-in-out;
+}
+.work-wrapper h3 {
+  color: white;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+  font-family: "Poppins";
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+}
+.work-wrapper p {
+  color: white;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  margin: 0.5em 0;
+  font-family: "Poppins";
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+.work-wrapper span {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin: 0.5em 0;
+  font-family: "Poppins";
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+.work-wrapper a {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin: 0.5em 0;
+  font-family: "Poppins";
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: 600;
+}
+.work-wrapper a:hover {
+  color: black;
+}
+.work-wrapper:last-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/pictures/Airtime3.png");
+}
+.work-wrapper:nth-child(even) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/pictures/Trendr3.png");
+  width: 350px;
+  height: 570px;
+}
+.work-wrapper:nth-child(even):hover {
+  transition: all 0.4s ease-in-out;
+  width: 380px;
+  height: 600px;
+}
 @media screen and (max-width: 767px) {
   .Portfolio {
-    height: 220vh;
+    height: 187vh;
   }
   .portfolio-header__text {
     font-size: 2em;
@@ -406,5 +483,33 @@
   .trendr-info.hide {
     width: 375px;
     line-height: 17px;
+  }
+  .work-wrapper {
+    width: 325px;
+    height: 325px;
+  }
+  .work-wrapper h3 {
+    font-size: 1.5em;
+  }
+  .work-wrapper span {
+    font-size: 0.8em;
+  }
+  .work-wrapper p {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+  .work-wrapper:nth-child(even) {
+    width: 325px;
+    height: 325px;
+  }
+  .work-wrapper:hover {
+    transition: none;
+    width: 325px;
+    height: 325px;
+  }
+  .work-wrapper:nth-child(even):hover {
+    transition: none;
+    width: 325px;
+    height: 325px;
   }
 }
